@@ -6,6 +6,9 @@
 			width: 100%;
 			padding: 0px;
 			display: flex;
+			.dropdown-toggle::after {
+				display: none;
+			}
 			.navbar-toggler {
 				background-color: $primary;
 				border-radius: 0px 0px 5px 0px;
@@ -22,14 +25,30 @@
 			}
 			.navbar-collapse.show, .navbar-collapse.collapsing{
 				background-color: $primary;
-				padding: 10px;
 				margin-top: -32px;
+				width: 100%;
 				.nav-item:first-child{
 					padding-top: 30px;
 				}
 				.nav-item {
 					padding-bottom: 10px;
 					justify-content: center;
+					width: 100%;
+					.fa-chevron-down {
+						color: $dark-blue-accents;
+					}
+					.fa-chevron-up {
+						color: $primary;
+					}
+					.dropdown-toggle[aria-expanded="false"] .fa-chevron-up {
+						display: none;
+					}
+					.dropdown-toggle[aria-expanded="true"] .fa-chevron-down {
+						display: none;
+					}
+					.dropdown-toggle[aria-expanded="true"] {
+						background-color: $dark-blue-accents;
+					}
 					.nav-link {
 						padding-top: 0px;
 						padding-bottom: 0px;
@@ -37,6 +56,18 @@
 						color: $secondary;
 						font-size: 27px;
 						font-family: $proxima-nova-medium, sans-serif;
+						width: 101%;
+					}
+					.dropdown-menu {
+						background-color: $dark-blue-accents;
+						width: 105%;
+						margin-top: -5px;
+						border: none;
+						.dropdown-item {
+							color: $secondary;
+							padding-left: 60px;
+							font-size: 22px;
+						}
 					}
 				}
 			}
@@ -47,7 +78,7 @@
 				justify-content: space-between;
 				height: 100%;
 				.navbar-nav {
-					height: 93.5px;
+					height: 93.5px !important;
 					border-bottom: 2px solid $dark-blue-accents;
 					height: 100%;
 					width: 100%;
@@ -64,6 +95,33 @@
 							height: 100%;
 							color: $dark-blue-accents;
 							line-height: 95px;
+							.fas {
+								display: none;
+							}
+						}
+						.dropdown-menu {
+							background-color: $primary;
+							border: none;
+							border-radius: 0px 0px 20px 20px;
+							.arrow-up {
+								width: 0;
+								height: 0;
+								border-left: 12px solid transparent;
+								border-right: 12px solid transparent;
+								border-bottom: 12px solid $primary;
+								margin-left: 30px;
+								margin-top: -18px;
+							}
+							.dropdown-item {
+								color: $secondary;
+								padding-left: 20px;
+								font-size: 18px;
+								font-family: $proxima-nova-medium;
+							}
+							.dropdown-item:hover {
+								background-color: inherit;
+								color: $dark-blue-accents;
+							}
 						}
 					}
 					.active {
@@ -77,4 +135,3 @@
 		}
 	}
 }
-
