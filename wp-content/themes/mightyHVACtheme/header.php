@@ -28,12 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 
 	<div id="top-bar">
-
 		<div id="wrapper-navbar">
-
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-sm">
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  			  <span class="navbar-toggler-icon"></span>
+			  <i class="fas fa-bars" display="inline"></i>
+			  <i class="fas fa-times" display="none"></i>
   			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">

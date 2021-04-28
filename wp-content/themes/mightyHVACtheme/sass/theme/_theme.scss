@@ -1,34 +1,22 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	align-content: stretch;
-	justify-content: space-between;
-}
-
 #top-bar {
-	height: 93.5px;
-	border-bottom: 2px solid $dark-blue-accents;
-	width: 100%;
-}
-
-#wrapper-navbar{
-	height: 94.5px;
-	.navbar {
-		height: 100%;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		.navbar-collapse {
-			height: 100%;
-			.navbar-nav {
-				height: 100%;
-				width: 100%;
-				justify-content: space-evenly;
-				align-items: stretch;
+	#wrapper-navbar{
+		.navbar {
+			width: 100%;
+			padding: 0px;
+			display: flex;
+			.navbar-toggler[aria-expanded="false"] .fa-times {
+				display: none;
+			}
+			.navbar-toggler[aria-expanded="true"] .fa-bars {
+				display: none;
+			}
+			.navbar-collapse.show, .navbar-collapse.collapsing{
+				background-color: $primary;
+				padding: 10px;
+				margin-top: -32px;
 				.nav-item {
-					height: 100%;
 					font-size: 15px;
 					font: futura;
 					.nav-link {
@@ -36,14 +24,42 @@ body {
 						padding-top: 0px;
 						padding-bottom: 0px;
 						height: 100%;
-						color: $dark-blue-accents;
+						color: $secondary;
 						line-height: 95px;
 					}
 				}
-				.active {
-					.nav-link {
-						color: $primary;
-						border-bottom: 4px solid $primary;
+			}
+			.collapse:not(.show) {
+				flex-direction: column;
+				align-items: stretch;
+				align-content: stretch;
+				justify-content: space-between;
+				height: 100%;
+				.navbar-nav {
+					height: 93.5px;
+					border-bottom: 2px solid $dark-blue-accents;
+					height: 100%;
+					width: 100%;
+					justify-content: space-evenly;
+					align-items: stretch;
+					.nav-item {
+						height: 100%;
+						font-size: 15px;
+						font: futura;
+						.nav-link {
+							text-transform: uppercase;
+							padding-top: 0px;
+							padding-bottom: 0px;
+							height: 100%;
+							color: $dark-blue-accents;
+							line-height: 95px;
+						}
+					}
+					.active {
+						.nav-link {
+							color: $primary;
+							border-bottom: 4px solid $primary;
+						}
 					}
 				}
 			}
@@ -51,7 +67,11 @@ body {
 	}
 }
 
-
-
-
-
+.navbar-toggler {
+	background-color: $primary;
+	border-radius: 0px 0px 5px 0px;
+	position: sticky;
+	.fa-bars, .fa-times {
+		color: $secondary;
+	}
+}
