@@ -26,35 +26,58 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
 
-		<nav id="main-nav" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
+	<div id="top-bar">
 
-			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-			</h2>
+		<div id="wrapper-navbar">
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<nav class="navbar navbar-expand-lg">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  			  <span class="navbar-toggler-icon"></span>
+  			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Careers</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Deals</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-				<!-- The WordPress Menu goes here -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				);
-				?>
+					<!-- The WordPress Menu goes here -->
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav ml-auto',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
 
 
-		</nav><!-- .site-navigation -->
+			</nav><!-- .site-navigation -->
 
-	</div><!-- #wrapper-navbar end -->
+		</div><!-- #wrapper-navbar end -->
+
+	</div>
