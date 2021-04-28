@@ -31,8 +31,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div id="wrapper-navbar">
 		<nav class="navbar navbar-expand-sm">
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			  <i class="fas fa-bars" display="inline"></i>
-			  <i class="fas fa-times" display="none"></i>
+			  <i class="fas fa-bars"></i>
+			  <i class="fas fa-times"></i>
   			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">

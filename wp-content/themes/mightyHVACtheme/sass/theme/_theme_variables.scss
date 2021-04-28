@@ -1,6 +1,41 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+@font-face {
+	font-family: "Futura-Bold";
+	src: url("../../fonts/Futura-Bold.woff") format('woff');
+}
+$futura-bold: "Futura-Bold";
+@font-face {
+	font-family: "Futura";
+	 src: url("../../fonts/Futura.woff") format('woff');
+	}
+$futura-medium: "Futura";
+@font-face {
+	font-family: "LustScriptDisplay";
+	src: url("../../fonts/LustScriptDisplay.woff") format('woff');
+}
+$lust-script: "LustScriptDisplay";
+@font-face {
+	font-family: "ProximaNova-Bold";
+	src: url("../../fonts/ProximaNova-Bold.woff") format('woff');
+}
+$proxima-nova-bold: "ProximaNova-Bold";
+@font-face {
+	font-family: "ProximaNova-Medium";
+	src: url("../../fonts/ProximaNova-Medium.woff") format('woff');
+}
+$proxima-nova-medium: "ProximaNova-Medium";
+@font-face {
+	font-family: "Rift-Bold";
+	src: url("../../fonts/Rift-Bold.woff") format('woff');
+}
+$rift-bold: "Rift-Bold";
+@font-face {
+	font-family: "TImes-Bold";
+	src: url("../../fonts/TImes-Bold.woff") format('woff');
+}
+$times-bold: "TImes-Bold";
 
 $primary: #66b3db; // Thats a sample how you could change a BootStrap variable.
 $secondary: #ffffff;
