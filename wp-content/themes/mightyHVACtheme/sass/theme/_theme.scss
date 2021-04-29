@@ -1,9 +1,106 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
+.leftside, .rightside {
+	height: 100vh;
+	width: 100%;
+}
+
+@media screen and (max-width:1023px) {
+	.leftside {
+		img {
+			position: static;
+			height: 30vh;
+			width: auto;
+		}
+		.background {
+			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
+			background-repeat: no-repeat;
+			background-position: 25% center;
+			width: 100vw;
+			height: 85vh;
+			display: flex;
+			#overlay {
+				width: 100vw;
+				height: auto;
+				object-fit: cover;
+				object-position: 85% 10%;
+			}
+			#mighty-logo {
+				right: 0;
+				max-width: 30vw;
+				top: -6vh;
+				height: auto;
+				position: absolute;
+			}
+		}
+	}
+	.rightside {
+		img {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.leftside, .rightside {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.leftside {
+		width: 60vw;
+		img {
+			display: none;
+		}
+	}
+
+	.rightside {
+		width: 40vw;
+		.background {
+			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
+			background-repeat: no-repeat;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 50vw;
+			height: 100vh;
+			margin-left: 60vw;
+			z-index: -10;
+			display: flex;
+			justify-content: right;
+			#overlay {
+				align-self: flex-end;
+				width: 40vw;
+				height: auto;
+				margin-right: 5px;
+			}
+			#mighty-logo {
+				position: absolute;
+				margin-left: 30vw;
+				margin-top: 10vh;
+				max-width: 10vw;
+			}
+		}
+	}
+}
+
 #top-bar {
 	#wrapper-navbar{
+		@media screen and (min-width:576px) {
+			height: 93.5px;
+			border-bottom: 2px solid $dark-blue-accents;
+		}
 		.navbar {
-			width: 100%;
+			@media screen and (min-width:576px) {
+				width: 60vw;
+			}
+			@media screen and (max-width:575px) {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 10000000;
+			}
 			padding: 0px;
 			display: flex;
 			.dropdown-toggle::after {
@@ -12,7 +109,8 @@
 			.navbar-toggler {
 				background-color: $primary;
 				border-radius: 0px 0px 5px 0px;
-				position: sticky;
+				z-index: 10000001;
+				height: 35px;
 				.fas {
 					color: $secondary;
 				}
@@ -25,15 +123,16 @@
 			}
 			.navbar-collapse.show, .navbar-collapse.collapsing{
 				background-color: $primary;
-				margin-top: -32px;
+				margin-top: -35px;
 				width: 100%;
+				height: 100vh;
 				.nav-item:first-child{
-					padding-top: 30px;
+					padding-top: 40px;
 				}
 				.nav-item {
 					padding-bottom: 10px;
 					justify-content: center;
-					width: 100%;
+					width: 100vw;
 					.fa-chevron-down {
 						color: $dark-blue-accents;
 					}
@@ -78,8 +177,7 @@
 				justify-content: space-between;
 				height: 100%;
 				.navbar-nav {
-					height: 93.5px !important;
-					border-bottom: 2px solid $dark-blue-accents;
+
 					height: 100%;
 					width: 100%;
 					justify-content: space-evenly;
@@ -94,7 +192,7 @@
 							padding-bottom: 0px;
 							height: 100%;
 							color: $dark-blue-accents;
-							line-height: 95px;
+							line-height: 91px;
 							.fas {
 								display: none;
 							}
@@ -102,7 +200,7 @@
 						.dropdown-menu {
 							background-color: $primary;
 							border: none;
-							border-radius: 0px 0px 20px 20px;
+							border-radius: 0px 0px 30px 30px;
 							.arrow-up {
 								width: 0;
 								height: 0;
@@ -119,7 +217,7 @@
 								font-family: $proxima-nova-medium;
 							}
 							.dropdown-item:hover {
-								background-color: inherit;
+								background-color: transparent;
 								color: $dark-blue-accents;
 							}
 						}
