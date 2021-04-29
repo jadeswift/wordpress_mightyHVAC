@@ -17,7 +17,7 @@ get_header();
 		<div class="content">
 			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
 			<p id="air">Air minded. Not airheaded.</p>
-			<div class="row" id="nested-row">
+			<div class="row nested-row">
 				<div class="col-sm-6">
 					<img id="gotyerback" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/gotyerback.png">
 				</div>
@@ -48,6 +48,8 @@ get_header();
 						<button type="button" class="btn">TRY IT NOW <span>JUST $29</span></button>
 					</div>
 				</div>
+			</div>
+			<div class="row nested-row">
 			</div>
 		</div>
 	</div>

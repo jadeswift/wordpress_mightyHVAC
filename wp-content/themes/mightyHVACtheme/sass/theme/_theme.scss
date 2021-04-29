@@ -57,7 +57,7 @@
 		margin-top: 50px;
 		margin-left: 10px;
 	}
-	#nested-row {
+	.nested-row {
 		flex-direction: row !important;
 		@media screen and (max-width:575px) {
 			flex-direction: column-reverse !important;
@@ -139,6 +139,11 @@
 					background-color: $light-blue-buttons;
 					border-color: $primary;
 					width: 90%;
+					span {
+						font-size: 20px;
+						font-weight: bold;
+						margin-left: 15px;
+					}
 				}
 				.btn:hover {
 					background-color: $primary;
