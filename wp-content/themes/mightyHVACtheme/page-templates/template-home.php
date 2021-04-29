@@ -16,6 +16,7 @@ get_header();
 	<div class="col-lg-7 no-gutters">
 		<div class="content">
 			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
+			<p id="air">Air minded. Not airheaded.</p>
 		</div>
 	</div>
 	<div class="col-lg-5 no-gutters">

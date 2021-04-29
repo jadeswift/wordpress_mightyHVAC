@@ -8,7 +8,7 @@
 .content {
 	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
 	background-size: cover;
-	background-position: -50% 15%;
+	background-position: -50% 25%;
 	background-size: 80%;
 	background-repeat: no-repeat;
 	#feel-good {
@@ -20,6 +20,17 @@
 		.inside {
 			color: $light-grey-text;
 		}
+	}
+	#air {
+		text-transform: uppercase;
+		font-family: $futura-bold, sans-serif;
+		font-size: 34px;
+		color: $dark-blue-accents;
+		@media screen and (min-width:576px) {
+			text-align: center;
+		}
+		margin-top: 50px;
+		margin-left: 10px;
 	}
 }
 
