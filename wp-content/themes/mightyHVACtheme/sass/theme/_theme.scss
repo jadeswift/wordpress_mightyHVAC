@@ -1,9 +1,5 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-.row {
-	flex-direction: row-reverse;
-}
-
 .content, .logo {
 	height: 100vh;
 	width: 100%;
@@ -13,62 +9,73 @@
 	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png") center no-repeat;
 }
 
-@media screen and (max-width:1023px) {
-	.logo {
-		.background {
-			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
-			background-repeat: no-repeat;
-			background-position: 25% center;
-			width: 100vw;
-			height: 85vh;
-			display: flex;
-			#overlay {
+
+@media screen and (max-width:990px) {
+	.row {
+		flex-direction: column-reverse;
+		.content {
+			order: 2;
+		}
+		.logo {
+			order: 1;
+			.background {
+				background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
+				background-repeat: no-repeat;
+				background-position: 25% center;
 				width: 100vw;
-				height: auto;
-				object-fit: cover;
-				object-position: 85% 10%;
-			}
-			#mighty-logo {
-				right: 0;
-				max-width: 30vw;
-				top: -6vh;
-				height: auto;
-				position: absolute;
+				height: 85vh;
+				display: flex;
+				#overlay {
+					width: 100vw;
+					height: auto;
+					object-fit: cover;
+					object-position: 85% 10%;
+				}
+				#mighty-logo {
+					right: 0;
+					max-width: 30vw;
+					top: -6vh;
+					height: auto;
+					position: absolute;
+				}
 			}
 		}
 	}
 }
 
-@media screen and (min-width:1024px) {
-	.content {
-		width: 60vw;
-	}
-
-	.logo {
-		width: 40vw;
-		.background {
-			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
-			background-repeat: no-repeat;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 50vw;
-			height: 100vh;
-			margin-left: 60vw;
-			z-index: -10;
-			display: flex;
-			justify-content: right;
-			#overlay {
-				align-self: flex-end;
-				width: 40vw;
-				height: auto;
-				margin-right: 5px;
-			}
-			#mighty-logo {
-				position: absolute;
-				margin-left: 30vw;
-				margin-top: 10vh;
-				max-width: 10vw;
+@media screen and (min-width:991px) {
+	.row {
+		flex-direction: row;
+		.content {
+			width: 60vw;
+			order: 1;
+		}
+		.logo {
+			width: 40vw;
+			order: 2;
+			.background {
+				background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
+				background-repeat: no-repeat;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 50vw;
+				height: 100vh;
+				margin-left: 60vw;
+				z-index: -10;
+				display: flex;
+				justify-content: right;
+				#overlay {
+					align-self: flex-end;
+					width: 40vw;
+					height: auto;
+				}
+				#mighty-logo {
+					position: absolute;
+					margin-left: 30vw;
+					margin-top: 10vh;
+					max-width: 10vw;
+				}
 			}
 		}
 	}
