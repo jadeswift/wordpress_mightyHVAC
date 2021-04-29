@@ -17,11 +17,11 @@ get_header();
 		<div class="content">
 			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
 			<p id="air">Air minded. Not airheaded.</p>
-			<div class="row">
-				<div class="col-md-6">
+			<div class="row no-gutters">
+				<div class="col-md-6 no-gutters">
 					<img id="gotyerback" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/gotyerback.png">
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 no-gutters">
 					<p id="block-text">
 						No one in the Des Moines metro area is better equipped
 						to take on challenging HVAC problems than Mighty Heating and Air.
@@ -32,7 +32,13 @@ get_header();
 						using the latest diagnostic tools and technologies to design a plan
 						perfectly suited for your home.
 					</p>
-					<div class="rectangle" id="schedule-service"></div>
+					<div class="rectangle" id="schedule-service">
+						<div class="text-icon-wrap">
+							<i class="far fa-clock"></i>
+							<p>SCHEDULE SERVICE</p>
+						</div>
+						<button type="button" class="btn">SCHEDULE SERVICE NOW</button>
+					</div>
 				</div>
 			</div>
 		</div>

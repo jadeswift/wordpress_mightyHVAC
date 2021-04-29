@@ -6,12 +6,17 @@
 }
 
 .rectangle {
-	width: 80%;
-	height: 100px;
+	width: 90%;
+	height: auto;
 	border-radius: 30px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 15px;
+}
+
+.row {
+	max-width: 100%;
 }
 
 .content {
@@ -45,7 +50,10 @@
 		height: auto;
 		width: 300px;
 		color: $dark-grey-text;
-		margin-left: 20px;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 	#gotyerback {
 		display: block;
@@ -57,8 +65,46 @@
 	}
 	#schedule-service {
 		background: $primary;
+		padding: 30px;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		.text-icon-wrap {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			p {
+				color: $secondary;
+				font-family: $futura-bold, sans-serif;
+				font-size: 25px;
+				line-height: 1.2;
+				margin: auto;
+			}
+			.fa-clock {
+				color: $secondary;
+				font-size: 55px;
+				margin: 10px;
+			}
+		}
+		.btn {
+			border: .5px solid $secondary;
+			border-radius: 20px;
+			margin-top: 20px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px 40px;
+			color: $secondary;
+			background-color: $dark-blue-buttons;
+		}
+		.btn:hover {
+			background-color: $secondary;
+			color: $primary;
+		}
 	}
-
 }
 
 @media screen and (max-width:990px) {
