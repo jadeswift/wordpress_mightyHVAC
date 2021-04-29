@@ -12,16 +12,16 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-<div class="row no-gutters">
+<div class="row no-gutters" id="father-row">
 	<div class="col-lg-7 no-gutters">
 		<div class="content">
 			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
 			<p id="air">Air minded. Not airheaded.</p>
-			<div class="row no-gutters">
-				<div class="col-md-6 no-gutters">
+			<div class="row" id="nested-row">
+				<div class="col-sm-6">
 					<img id="gotyerback" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/gotyerback.png">
 				</div>
-				<div class="col-md-6 no-gutters">
+				<div class="col-sm-6">
 					<p id="block-text">
 						No one in the Des Moines metro area is better equipped
 						to take on challenging HVAC problems than Mighty Heating and Air.
@@ -38,6 +38,14 @@ get_header();
 							<p>SCHEDULE SERVICE</p>
 						</div>
 						<button type="button" class="btn">SCHEDULE SERVICE NOW</button>
+					</div>
+					<div class="rectangle" id="very-close">
+						<p id="too-close">WE WON’T GET TOO CLOSE FOR COMFORT</p>
+						<p id="safety">
+							Safety is always a priority for us, so during the pandemic, we’re
+							offering virtual diagnostic services.
+						</p>
+						<button type="button" class="btn">TRY IT NOW <span>JUST $29</span></button>
 					</div>
 				</div>
 			</div>

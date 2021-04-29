@@ -12,11 +12,21 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px;
+	padding: 30px;
+}
+
+.btn {
+	border: .5px solid;
+	border-radius: 20px;
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
 }
 
 .row {
-	max-width: 100%;
+	width: 100%;
 }
 
 .content {
@@ -25,6 +35,7 @@
 	background-position: -50% 25%;
 	background-size: 80%;
 	background-repeat: no-repeat;
+	height: auto;
 	#feel-good {
 		margin-top: 20px;
 		margin-left: 20px;
@@ -46,63 +57,94 @@
 		margin-top: 50px;
 		margin-left: 10px;
 	}
-	#block-text {
-		height: auto;
-		width: 300px;
-		color: $dark-grey-text;
-		margin-top: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	#gotyerback {
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-		width: 60%;
-		height: auto;
-		margin-top: 80px;
-	}
-	#schedule-service {
-		background: $primary;
-		padding: 30px;
-		margin-top: 50px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		.text-icon-wrap {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			p {
-				color: $secondary;
-				font-family: $futura-bold, sans-serif;
-				font-size: 25px;
-				line-height: 1.2;
-				margin: auto;
-			}
-			.fa-clock {
-				color: $secondary;
-				font-size: 55px;
-				margin: 10px;
-			}
+	#nested-row {
+		flex-direction: row !important;
+		@media screen and (max-width:575px) {
+			flex-direction: column-reverse !important;
 		}
-		.btn {
-			border: .5px solid $secondary;
-			border-radius: 20px;
-			margin-top: 20px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 10px 40px;
-			color: $secondary;
-			background-color: $dark-blue-buttons;
-		}
-		.btn:hover {
-			background-color: $secondary;
-			color: $primary;
+		.col-sm-6 {
+			padding: 0px 2vw;
+			#gotyerback {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 60%;
+				max-width: 250px;
+				height: auto;
+				margin-top: 80px;
+			}
+			#block-text {
+				height: auto;
+				width: 80%;
+				color: $dark-grey-text;
+				margin-top: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				font-family: $proxima-nova-medium, sans-serif;
+				font-size: 19px;
+			}
+			#schedule-service {
+			background: $primary;
+			margin-top: 50px;
+			.text-icon-wrap {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: 90%;
+				p {
+					color: $secondary;
+					font-family: $futura-bold, sans-serif;
+					font-size: 25px;
+					line-height: 1.5;
+					margin: auto;
+				}
+				.fa-clock {
+					color: $secondary;
+					font-size: 55px;
+					margin: 10px;
+					margin-right: 20px;
+				}
+			}
+			.btn {
+				color: $secondary;
+				background-color: $dark-blue-buttons;
+				border-color: $secondary;
+				width: 90%;
+			}
+			.btn:hover {
+				background-color: $secondary;
+				color: $primary;
+			}
+			}
+			#very-close {
+				background: $light-grey-section;
+				margin-top: 50px;
+				p {
+					line-height: 1.5;
+				}
+				#too-close {
+					font-family: $futura-bold, sans-serif;
+					font-size: 27px;
+					color: $dark-blue-accents;
+				}
+				#safety {
+					font-family: $proxima-nova-medium, sans-serif;
+					font-size: 17px;
+					color: $dark-grey-text;
+				}
+				.btn {
+					color: $primary;
+					background-color: $light-blue-buttons;
+					border-color: $primary;
+					width: 90%;
+				}
+				.btn:hover {
+					background-color: $primary;
+					color: $secondary;
+				}
+			}
 		}
 	}
 }
