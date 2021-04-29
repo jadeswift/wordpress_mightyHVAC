@@ -1,17 +1,20 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-.leftside, .rightside {
+.row {
+	flex-direction: row-reverse;
+}
+
+.content, .logo {
 	height: 100vh;
 	width: 100%;
 }
 
+.content {
+	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png") center no-repeat;
+}
+
 @media screen and (max-width:1023px) {
-	.rightside {
-		img {
-			position: static;
-			height: 30vh;
-			width: auto;
-		}
+	.logo {
 		.background {
 			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
 			background-repeat: no-repeat;
@@ -37,16 +40,11 @@
 }
 
 @media screen and (min-width:1024px) {
-	.leftside, .rightside {
-		height: 100vh;
-		width: 100%;
-	}
-
-	.leftside {
+	.content {
 		width: 60vw;
 	}
 
-	.rightside {
+	.logo {
 		width: 40vw;
 		.background {
 			background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
