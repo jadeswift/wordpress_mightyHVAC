@@ -152,6 +152,30 @@
 			}
 		}
 	}
+	.half-the-battle {
+		background-color: $dark-blue-accents;
+		background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/scanning-for-lifeforms.png");
+		background-size: cover;
+		background-position: -2% 25%;
+		background-size: 60%;
+		background-repeat: no-repeat;
+		margin-top: 20px;
+		height: 500px;
+		.heading-text {
+			padding: 32px;
+			width: 372px;
+			p {
+				font-family: $futura-bold, sans-serif;
+				font-size: 30px;
+				color: $secondary;
+				margin-left: 20vw;
+				margin-top: 20px;
+				line-height: 1.6;
+				width: 100%;
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 
 @media screen and (max-width:990px) {

@@ -49,7 +49,14 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div class="row nested-row">
+			<div class="half-the-battle">
+				<div class="heading-text">
+					<p>
+						Half the battle is
+						understanding<br>
+						the whole home.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
