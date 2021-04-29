@@ -12,13 +12,9 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-<div class="row no-gutters">
+<div class="row flex-column-reverse no-gutters">
 	<div class="col-lg-7 no-gutters">
 		<div class="leftside">
-			<div class="background">
-				<img id="mighty-logo" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/mighty-logo.png">
-				<img id="overlay" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/overlay.png">
-			</div>
 		</div>
 	</div>
 	<div class="col-lg-5 no-gutters">

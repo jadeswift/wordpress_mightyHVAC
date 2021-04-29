@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width:1023px) {
-	.leftside {
+	.rightside {
 		img {
 			position: static;
 			height: 30vh;
@@ -34,11 +34,6 @@
 			}
 		}
 	}
-	.rightside {
-		img {
-			display: none;
-		}
-	}
 }
 
 @media screen and (min-width:1024px) {
@@ -49,9 +44,6 @@
 
 	.leftside {
 		width: 60vw;
-		img {
-			display: none;
-		}
 	}
 
 	.rightside {
