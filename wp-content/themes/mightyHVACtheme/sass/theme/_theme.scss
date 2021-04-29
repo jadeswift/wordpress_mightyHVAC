@@ -32,6 +32,17 @@
 		margin-top: 50px;
 		margin-left: 10px;
 	}
+	#block-text {
+		height: auto;
+		width: 300px;
+		color: $dark-grey-text;
+		@media screen and (min-width:576px) {
+			margin-left: 30vw;
+		}
+		@media screen and (max-width:575px) {
+			margin-left: 10px;
+		}
+	}
 }
 
 @media screen and (max-width:990px) {

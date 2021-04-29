@@ -17,6 +17,15 @@ get_header();
 		<div class="content">
 			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
 			<p id="air">Air minded. Not airheaded.</p>
+			<p id="block-text">No one in the Des Moines metro area is better equipped
+				to take on challenging HVAC problems than Mighty Heating and Air.
+				That’s because most companies sell systems, not solutions. Every
+				home is different and so is our approach. Think of us as ‘airspace’
+				engineers. We’re design experts who dig deeper and get all up in
+				your space. Your home space, that is. Asking the right questions,
+				using the latest diagnostic tools and technologies to design a plan
+				perfectly suited for your home.
+			</p>
 		</div>
 	</div>
 	<div class="col-lg-5 no-gutters">
