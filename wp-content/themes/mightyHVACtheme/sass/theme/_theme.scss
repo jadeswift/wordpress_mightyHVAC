@@ -6,9 +6,12 @@
 }
 
 .content {
-	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png") center no-repeat;
+	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
+	background-size: cover;
+	background-position: -50% 10vh;
+	background-size: 80%;
+	background-repeat: no-repeat;
 }
-
 
 @media screen and (max-width:990px) {
 	.row {
@@ -45,6 +48,12 @@
 
 @media screen and (min-width:991px) {
 	.row {
+		.col-lg-7 {
+			max-width: 60vw;
+		}
+		.col-lg-5 {
+			max-width: 40vw;
+		}
 		flex-direction: row;
 		.content {
 			width: 60vw;
@@ -59,7 +68,7 @@
 				position: fixed;
 				top: 0;
 				left: 0;
-				width: 50vw;
+				width: 40vw;
 				height: 100vh;
 				margin-left: 60vw;
 				z-index: -10;

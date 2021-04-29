@@ -15,7 +15,6 @@ get_header();
 <div class="row no-gutters">
 	<div class="col-lg-7 no-gutters">
 		<div class="content">
-
 		</div>
 	</div>
 	<div class="col-lg-5 no-gutters">
