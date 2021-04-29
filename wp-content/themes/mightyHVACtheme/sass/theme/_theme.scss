@@ -5,6 +5,15 @@
 	width: 100%;
 }
 
+.rectangle {
+	width: 80%;
+	height: 100px;
+	border-radius: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .content {
 	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
 	background-size: cover;
@@ -36,13 +45,20 @@
 		height: auto;
 		width: 300px;
 		color: $dark-grey-text;
-		@media screen and (min-width:576px) {
-			margin-left: 30vw;
-		}
-		@media screen and (max-width:575px) {
-			margin-left: 10px;
-		}
+		margin-left: 20px;
 	}
+	#gotyerback {
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+		width: 60%;
+		height: auto;
+		margin-top: 80px;
+	}
+	#schedule-service {
+		background: $primary;
+	}
+
 }
 
 @media screen and (max-width:990px) {
