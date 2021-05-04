@@ -1,29 +1,60 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
 @font-face {
-	font-family: "Futura-Bold";
-	src: url("../../fonts/Futura-Bold.woff") format('woff');
+	font-family: "Futura";
+	src: url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.eot");
+	src:
+		url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/637989307094f684d567a4d08f4bbdd8.svg#Futura") format("svg");
 }
 $futura-bold: "Futura-Bold";
 @font-face {
 	font-family: "Futura";
-	 src: url("../../fonts/Futura.woff") format('woff');
-	}
+	src: url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.eot");
+	src:
+		url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/7fdb09ff5a96f39768f311d5471d68a9.svg#FuturaLig") format("svg");
+}
 $futura-medium: "Futura";
 @font-face {
-	font-family: "LustScriptDisplay";
-	src: url("../../fonts/LustScriptDisplay.woff") format('woff');
+	font-family: "Lust Script Display";
+	src: url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.eot");
+	src:
+		url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/ba65a7513ceaf624fba92dac18cb301a.svg#ArenaOutline") format("svg");
 }
-$lust-script: "LustScriptDisplay";
+$lust-script: "Lust Script Display";
 @font-face {
 	font-family: "ProximaNova-Bold";
-	src: url("../../fonts/ProximaNova-Bold.woff") format('woff');
+	src: url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.eot");
+	src:
+		url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/72b6f2c9990bd3d37b8013a59ed78902.svg#Proxima Nova") format("svg");
 }
 $proxima-nova-bold: "ProximaNova-Bold";
 @font-face {
 	font-family: "ProximaNova-Medium";
-	src: url("../../fonts/ProximaNova-Medium.woff") format('woff');
+	src: url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot");
+	src:
+		url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.eot?#iefix") format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff2") format("woff2"),
+		url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.woff") format("woff"),
+		url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.ttf") format("truetype"),
+		url("//db.onlinewebfonts.com/t/bf9f5d50c1b928ff21436517a1a95ad9.svg#Proxima Nova") format("svg");
 }
 $proxima-nova-medium: "ProximaNova-Medium";
 @font-face {
@@ -37,7 +68,7 @@ $rift-bold: "Rift-Bold";
 }
 $times-bold: "TImes-Bold";
 
-$primary: #66b3db; // Thats a sample how you could change a BootStrap variable.
+$primary: #66b3db;
 $secondary: #ffffff;
 $dark-blue-buttons: #9dcde6;
 $dark-blue-accents: #323e48;
