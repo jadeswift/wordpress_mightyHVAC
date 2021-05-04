@@ -2,8 +2,6 @@
 /**
  * Template Name: Template Home
  *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
- *
  * @package UnderStrap
  */
 
@@ -15,7 +13,20 @@ get_header();
 <div class="row no-gutters" id="father-row">
 	<div class="col-lg-7 no-gutters">
 		<div class="content">
-			<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
+			<div class="row">
+				<div class="col-sm-9">
+					<p id="feel-good">Feel Good <span class="inside">inside.</span></p>
+				</div>
+				<div class="col-sm-3">
+					<div class="call-us">
+						<i class="fas fa-phone-alt"></i>
+						<p>
+							CALL US 24/7<br>
+							<span>515.635.2323</span>
+						</p>
+					</div>
+				</div>
+			</div>
 			<p id="air">Air minded. Not airheaded.</p>
 			<div class="row nested-row">
 				<div class="col-sm-6">

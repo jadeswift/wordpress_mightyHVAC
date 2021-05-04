@@ -34,10 +34,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 			  <i class="fas fa-bars"></i>
 			  <i class="fas fa-times"></i>
   			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			  					<!-- The WordPress Menu goes here -->
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNav',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'top-bar',
+						'depth'           => 2,
+						'aria-labelledby' => 'navbarDropdown',
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				);
+			?>
+			<!-- <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-					  <a class="nav-link" href="#">Home</a>
+					  <a class="nav-link" href="/wordpress-site">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,30 +80,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 					  <a class="nav-link" href="#">Deals</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#">About</a>
+					  <a class="nav-link" href="about/">About</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link" href="#">Contact</a>
+					  <a class="nav-link" href="contact-us/">Contact</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 		</nav>
-
-					<!-- The WordPress Menu goes here -->
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location'  => 'primary',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id'    => 'navbarNavDropdown',
-							'menu_class'      => 'navbar-nav ml-auto',
-							'fallback_cb'     => '',
-							'menu_id'         => 'main-menu',
-							'depth'           => 2,
-							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-						)
-					);
-					?>
 
 
 			</nav><!-- .site-navigation -->
