@@ -6,7 +6,7 @@ This is a wordpress template for Mighty HVAC. It was created with understrap. Th
 
 ### Download WordPress Software
 
-The software, WordPress, is actually a collection of PHP source code that integrated to form a website management system (WMS). You should not confuse WordPress (the software) with WordPress.com (the web service by Automattic). You can download WordPress as a package (either on ZIP or TAR) from WordPress Software Project website https://wordpress.org/download. At the time I write this article (June 22nd 2017) it reached version 4.8.
+The software, WordPress, is actually a collection of PHP source code that integrated to form a website management system (WMS). You should not confuse WordPress (the software) with WordPress.com (the web service by Automattic). You can download WordPress as a package (either on ZIP or TAR) from WordPress Software Project website https://wordpress.org/download. 
 
 ### 1. Install XAMPP
 Follow this XAMPP Installation Tutorial. Please be aware this is only for 64bit computers.
