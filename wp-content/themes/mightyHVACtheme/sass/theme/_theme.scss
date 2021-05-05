@@ -454,7 +454,6 @@
 					line-height: 1.5em;
 					height: 5.5em;
 					overflow: hidden;
-					z-index: 5000000;
 					p {
 						color: $secondary;
 						margin: 0px;
@@ -833,7 +832,6 @@
 
 @media screen and (min-width:991px) {
 	.row {
-		z-index: -50000000;
 		overflow: hidden;
 		.col-lg-7 {
 			max-width: 60vw;
