@@ -454,6 +454,7 @@
 					line-height: 1.5em;
 					height: 5.5em;
 					overflow: hidden;
+					z-index: 5000000;
 					p {
 						color: $secondary;
 						margin: 0px;
@@ -646,7 +647,7 @@
 			}
 		}
 		.col-sm-4 {
-			padding: 8em;
+			padding: 1em;
 			align-content: center;
 			img {
 				max-width: 10em;
@@ -798,7 +799,7 @@
 
 @media screen and (max-width:990px) {
 	.row {
-		flex-direction: column-reverse;
+		flex-direction: column-reverse !important;
 		.content {
 			order: 2;
 		}
@@ -832,11 +833,13 @@
 
 @media screen and (min-width:991px) {
 	.row {
+		z-index: -50000000;
+		overflow: hidden;
 		.col-lg-7 {
 			max-width: 60vw;
 		}
 		.col-lg-5 {
-			max-width: 40vw;
+			max-width: 20vw !important;
 		}
 		flex-direction: row;
 		.content {
@@ -844,7 +847,7 @@
 			order: 1;
 		}
 		.logo {
-			width: 39vw;
+			width: 30vw;
 			order: 2;
 			.background {
 				background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
