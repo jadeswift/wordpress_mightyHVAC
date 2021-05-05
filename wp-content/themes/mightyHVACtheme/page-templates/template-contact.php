@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-<div class="row no-gutters contact-content">
+<div class="row no-gutters interior-content">
 	<img class="header-image" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/contact.png">
 	<img id="logo" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/mighty-logo.png">
 	<div class="row">

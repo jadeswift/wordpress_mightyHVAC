@@ -115,10 +115,12 @@
 .iwaver-stacked {
 	.row {
 		flex-direction: column-reverse !important;
-		width: 100%;
+		width: 90%;
 		margin-top: 10vh;
 		display: flex;
 		max-height: 50vh;
+		margin-left: auto;
+		margin-right: auto;
 		.col-sm-8:before {
 			position: absolute;
 			border: 1.5px solid $dark-grey-text;
@@ -203,6 +205,74 @@
 	font-family: $futura-bold, sans-serif;
 	font-size: 21px;
 	color: $primary;
+}
+
+#schedule-service {
+	background: $primary;
+	margin-top: 50px;
+	.text-icon-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		p {
+			color: $secondary;
+			font-family: $futura-bold, sans-serif;
+			font-size: 25px;
+			line-height: 1.5;
+			margin: auto;
+		}
+		.fa-clock {
+			color: $secondary;
+			font-size: 55px;
+			margin: 10px;
+			margin-right: 20px;
+		}
+	}
+	.btn {
+		color: $secondary;
+		background-color: $dark-blue-buttons;
+		border-color: $secondary;
+		width: 90%;
+	}
+	.btn:hover {
+		background-color: $secondary;
+		color: $primary;
+	}
+}
+
+#very-close {
+	background: $light-grey-section;
+	margin-top: 50px;
+	p {
+		line-height: 1.5;
+	}
+	#too-close {
+		font-family: $futura-bold, sans-serif;
+		font-size: 27px;
+		color: $dark-blue-accents;
+	}
+	#safety {
+		font-family: $proxima-nova-medium, sans-serif;
+		font-size: 17px;
+		color: $dark-grey-text;
+	}
+	.btn {
+		color: $primary;
+		background-color: $light-blue-buttons;
+		border-color: $primary;
+		width: 90%;
+		span {
+			font-size: 20px;
+			font-weight: bold;
+			margin-left: 15px;
+		}
+	}
+	.btn:hover {
+		background-color: $primary;
+		color: $secondary;
+	}
 }
 
 .content {
@@ -292,72 +362,7 @@
 				font-family: $proxima-nova-medium, sans-serif;
 				font-size: 19px;
 			}
-			#schedule-service {
-			background: $primary;
-			margin-top: 50px;
-			.text-icon-wrap {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				width: 90%;
-				p {
-					color: $secondary;
-					font-family: $futura-bold, sans-serif;
-					font-size: 25px;
-					line-height: 1.5;
-					margin: auto;
-				}
-				.fa-clock {
-					color: $secondary;
-					font-size: 55px;
-					margin: 10px;
-					margin-right: 20px;
-				}
-			}
-			.btn {
-				color: $secondary;
-				background-color: $dark-blue-buttons;
-				border-color: $secondary;
-				width: 90%;
-			}
-			.btn:hover {
-				background-color: $secondary;
-				color: $primary;
-			}
-			}
-			#very-close {
-				background: $light-grey-section;
-				margin-top: 50px;
-				p {
-					line-height: 1.5;
-				}
-				#too-close {
-					font-family: $futura-bold, sans-serif;
-					font-size: 27px;
-					color: $dark-blue-accents;
-				}
-				#safety {
-					font-family: $proxima-nova-medium, sans-serif;
-					font-size: 17px;
-					color: $dark-grey-text;
-				}
-				.btn {
-					color: $primary;
-					background-color: $light-blue-buttons;
-					border-color: $primary;
-					width: 90%;
-					span {
-						font-size: 20px;
-						font-weight: bold;
-						margin-left: 15px;
-					}
-				}
-				.btn:hover {
-					background-color: $primary;
-					color: $secondary;
-				}
-			}
+
 		}
 	}
 	.half-the-battle {
@@ -651,7 +656,21 @@
 	}
 }
 
-.contact-content {
+#logo {
+	right: 0;
+	max-width: 10vw;
+	top: 6vh;
+	height: auto;
+	position: absolute;
+}
+
+#about {
+	.header-image {
+		width: 85%;
+	}
+}
+
+.interior-content {
 	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
 	background-size: cover;
 	background-position: -50% 50vh;
@@ -668,15 +687,28 @@
 		margin: 0 auto!important;
 		h1 {
 			margin-bottom: 30px;
+			text-transform: uppercase;
+			color: $dark-grey-text;
+		}
+		h2 {
+			color: $primary;
+			font-family: $futura-bold, sans-serif;
+			font-size: 22px;
+			text-transform: uppercase;
+			margin-top: 30px;
+		}
+		p {
+			font-family: $proxima-nova-medium, sans-serif;
+			font-size: 19px;
+			margin-top: 20px;
+			color: $dark-grey-text;
+		}
+		img {
+			margin-top: 40px;
+			margin-bottom: 40px;
 		}
 	}
-	#logo {
-		right: 0;
-		max-width: 10vw;
-		top: 6vh;
-		height: auto;
-		position: absolute;
-	}
+
 	.wpcf7 {
 		width: 100%;
 		input, select {
@@ -688,6 +720,27 @@
 		.btn:hover {
 			background-color: $primary;
 			color: $secondary;
+		}
+	}
+}
+
+.about-content {
+	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
+	background-size: cover;
+	background-position: -50% 50vh;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	height: auto;
+	.header-image {
+		margin-left: -10%;
+		width: 80vw;
+	}
+	.heading-text {
+		padding-top: 30px;
+		max-width: 600px;
+		margin: 0 auto!important;
+		h1 {
+			margin-bottom: 30px;
 		}
 	}
 }
