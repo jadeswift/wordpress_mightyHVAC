@@ -2,7 +2,11 @@
 
 This is a wordpress template for Mighty HVAC. It was created with understrap. There are currently templates for the home page, contact page, and about us page. Please see the Adobe XD file for reference [located here.](MightyHVAC-Website.xd)
 
-## Getting Your Environment Setup 🎊🎉
+## Site Prieview 🐱‍👤
+
+The website is currently hosted [here](https://testing466677956.wpcomstaging.com/)
+
+## Getting Your Environment Setup for Local Hosting 🎊🎉
 
 ### Download WordPress Software
 
