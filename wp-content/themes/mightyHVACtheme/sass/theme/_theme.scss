@@ -443,6 +443,7 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				overflow: hidden;
 				.rectangle {
 					border: $dark-grey-text solid 1px;
 					width: 100%;
@@ -843,7 +844,7 @@
 			order: 1;
 		}
 		.logo {
-			width: 40vw;
+			width: 39vw;
 			order: 2;
 			.background {
 				background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/background-image.png");
@@ -1025,5 +1026,119 @@
 				}
 			}
 		}
+	}
+}
+
+#home-foot {
+	@media screen and (min-width:572px) {
+		max-width: 60vw !important;
+	}
+}
+
+#wrapper-footer {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	#top-footer {
+		background-color: $dark-blue-accents;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 5em;
+		@media screen and (max-width:572px) {
+			padding:1em;
+			flex-direction: column !important;
+		}
+		.col-sm-5 {
+			@media screen and (max-width:572px) {
+				padding: 20%;
+			}
+		}
+		#foot-logo {
+			height: 300px;
+		}
+		#socials {
+			margin-top: 2em;
+			margin-bottom: 4em;
+		}
+		address {
+			margin-top: 50px;
+			font-family: $proxima-nova-medium, sans-serif;
+			font-size: 17px;
+			color: $secondary;
+			max-width: 100%;
+			span {
+				color: $primary;
+				font-weight: bold;
+			}
+		}
+		h1 {
+			color: $primary;
+			font-family: $futura-bold, sans-serif;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		ul {
+			list-style-type: none;
+			color: $secondary;
+			padding-left: 0;
+			li {
+				text-decoration: none;
+				font-family: $proxima-nova-medium, sans-serif;
+				font-size: 17px;
+				line-height: 1.7em;
+			}
+		}
+		#left-foot {
+			padding-left: 5em;
+		}
+	}
+	.line {
+		@media screen and (max-width:572px) {
+			display: none;
+		}
+		border-left: 1px solid $dark-grey-text;
+		height: 450px;
+		margin-left: -3px;
+	}
+	#bottom-footer {
+		background-color: $medium-blue-accents;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		padding: 4em;
+
+		@media screen and (max-width:572px) {
+			padding:1em;
+			flex-direction: column !important;
+		}
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			a {
+				color: $secondary;
+				text-decoration: none;
+				line-height: .8em;
+				font-family: $proxima-nova-medium, sans-serif;
+				font-size: 17px;
+			}
+		}
+		#private {
+			color: $secondary;
+			font-family: $proxima-nova-medium;
+			font-size: 17px;
+			margin-bottom: 4em;
+		}
+		#copyright {
+			color: $light-grey-text;
+			font-family: $proxima-nova-medium;
+			font-size: 15px;
+		}
+	}
+	.no-stack {
+		flex-direction: row !important;
+		justify-content: space-between;
+		width: 100%;
 	}
 }

@@ -216,4 +216,6 @@ get_header();
 	</div>
 </div>
 
-<?php get_footer();
+<div id="home-foot">
+	<?php get_footer(); ?>
+</div>

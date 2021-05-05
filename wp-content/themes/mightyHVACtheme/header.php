@@ -50,43 +50,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 			?>
-			<!-- <div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-					  <a class="nav-link" href="/wordpress-site">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Services
-							<i class="fas fa-chevron-down"></i>
-							<i class="fas fa-chevron-up"></i>
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<div class="arrow-up"></div>
-          					<a class="dropdown-item" href="#">Air Conditioning</a>
-          					<a class="dropdown-item" href="#">Heating</a>
-          					<a class="dropdown-item" href="#">Home Performance</a>
-							<a class="dropdown-item" href="#">Indoor Air Quality</a>
-							<a class="dropdown-item" href="#">Water Heaters</a>
-							<a class="dropdown-item" href="#">Light Commercial</a>
-							<a class="dropdown-item" href="#">Geothermal</a>
-							<a class="dropdown-item" href="#">Maintenance Plan</a>
-        				</div>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Careers</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="#">Deals</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="about/">About</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="contact-us/">Contact</a>
-					</li>
-				</ul>
-			</div> -->
 		</nav>
 
 
