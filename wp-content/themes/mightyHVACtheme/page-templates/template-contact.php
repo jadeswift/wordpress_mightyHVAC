@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 ?>
 <div class="row no-gutters contact-content">
-	<img src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/contact.png">
+	<img class="header-image" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/contact.png">
 	<img id="logo" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/mighty-logo.png">
 	<div class="row">
 		<div class="col-6">
@@ -41,10 +41,10 @@ get_header();
 					</div>
 					<div class="col-sm-4 no-gutters">
 						<div class="row">
-							<div class="col-8">
+							<div class="col-9">
 								<p>GREAT DEALS</p>
 							</div>
-							<div class="col-4">
+							<div class="col-3">
 								<button type="button" class="btn">More</button>
 							</div>
 						</div>
@@ -52,7 +52,77 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="col-3"></div>
+	</div>
+	<div id="great-folks" class="rectangle">
+		<p>Folks we made feel good</p>
+	</div>
+	<div class="bottom-folks">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-5">
+							<img class="d-block w-30" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/Kelly.png">
+						</div>
+						<div class="col-7">
+							<img class="quote" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/quote.png">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+								sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+								magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+							</p>
+							<p class="name">
+								Kelly T.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-5">
+							<img class="d-block w-30" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/Andrew.png">
+						</div>
+						<div class="col-7">
+						<img class="quote" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/quote.png">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+								sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+								magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+							</p>
+							<p class="name">
+								Andrew J.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-5">
+							<img class="d-block w-30" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/Samantha.png">
+						</div>
+						<div class="col-7">
+						<img class="quote" src="/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/quote.png">
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+								sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+								magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+							</p>
+							<p class="name">
+								Samantha R.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<i class="fas fa-chevron-left fa-3x"></i>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<i class="fas fa-chevron-right fa-3x"></i>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</div>
 </div>
 <?php

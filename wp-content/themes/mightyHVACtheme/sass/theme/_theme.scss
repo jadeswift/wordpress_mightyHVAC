@@ -194,6 +194,17 @@
 	}
 }
 
+.quote {
+	height: 3em;
+}
+
+.name {
+	text-transform: uppercase;
+	font-family: $futura-bold, sans-serif;
+	font-size: 21px;
+	color: $primary;
+}
+
 .content {
 	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
 	background-size: cover;
@@ -541,9 +552,6 @@
 				background-color: $primary;
 				color: $secondary;
 			}
-			.quote {
-				height: 3em;
-			}
 			.person {
 				max-height: 15em;
 				max-width: 100%;
@@ -554,12 +562,7 @@
 				width: 70%;
 				margin-left: 1em;
 			}
-			.name {
-				text-transform: uppercase;
-				font-family: $futura-bold, sans-serif;
-				font-size: 21px;
-				color: $primary;
-			}
+
 			#folks-title {
 				@media screen and (max-width:575px) {
 					padding: 0px;
@@ -655,7 +658,7 @@
 	background-size: 50%;
 	background-repeat: no-repeat;
 	height: auto;
-	img {
+	.header-image {
 		margin-left: -10%;
 		width: 100%;
 	}
@@ -686,6 +689,56 @@
 			background-color: $primary;
 			color: $secondary;
 		}
+	}
+}
+
+#great-folks {
+	margin-bottom: -40px;
+	background-color: $primary;
+	border-radius: 00px 30px 30px 0px;
+	width: 25vw;
+	left: 0;
+	margin-left: 0%;
+	z-index: 200;
+	height: 70px;
+	padding: auto;
+	p {
+		font-family: $futura-bold, sans-serif;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: $secondary;
+		margin-top: -8px;
+	}
+}
+
+.bottom-folks {
+	background-color: $light-grey-section;
+	width: 100%;
+	height: fit-content;
+	padding: 40px;
+	.rectangle {
+		margin
+		p {
+			font-family: $futura-bold, sans-serif;
+			font-size: 22px;
+		}
+	}
+	.carousel-item {
+		.row {
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			max-width: 50%;
+			margin: auto;
+			.d-block {
+				max-height: 200px;
+				max-width: 200px;
+				margin-left: 0;
+			}
+		}
+	}
+	.fas {
+		color: $primary;
 	}
 }
 
