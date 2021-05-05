@@ -60,3 +60,7 @@ Once finished, now visit the address http://localhost/wordpress. You should see 
 This is the Dashboard inside of WordPress WMS:
 
 It's all completed and have a good learning with WordPress!
+
+## Understrap Information 🧠🦕
+
+The docs are very through and have all of the getting started instructions included [here](https://usdocu.tarthemes.com/)
