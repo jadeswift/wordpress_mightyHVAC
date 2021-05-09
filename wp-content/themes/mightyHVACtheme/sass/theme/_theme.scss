@@ -1,10 +1,4 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-
-.content, .logo {
-	height: 100vh;
-	width: 100%;
-}
-
+// reusable elementss
 .rectangle {
 	width: 90%;
 	height: auto;
@@ -31,6 +25,18 @@
 	width: 100%;
 }
 
+.quote {
+	height: 3em;
+}
+
+.name {
+	text-transform: uppercase;
+	font-family: $futura-bold, sans-serif;
+	font-size: 21px;
+	color: $primary;
+}
+
+// reusable content
 .iwaver {
 	.row {
 		width: 50em;
@@ -64,8 +70,9 @@
 			#price {
 				font-family: $lust-script;
 				color: $secondary;
-				font-size: 104px;
+				font-size: 7rem;
 				margin-bottom: 0px;
+				overflow-x: clip;
 			}
 			#description {
 				font-family: $futura-bold, sans-serif;
@@ -196,17 +203,6 @@
 	}
 }
 
-.quote {
-	height: 3em;
-}
-
-.name {
-	text-transform: uppercase;
-	font-family: $futura-bold, sans-serif;
-	font-size: 21px;
-	color: $primary;
-}
-
 #schedule-service {
 	background: $primary;
 	margin-top: 50px;
@@ -273,6 +269,70 @@
 		background-color: $primary;
 		color: $secondary;
 	}
+}
+
+#logo {
+	right: 0;
+	max-width: 10vw;
+	top: 6vh;
+	height: auto;
+	position: absolute;
+}
+
+#great-folks {
+	margin-bottom: -40px;
+	background-color: $primary;
+	border-radius: 00px 30px 30px 0px;
+	width: 25vw;
+	left: 0;
+	margin-left: 0%;
+	z-index: 200;
+	height: 70px;
+	padding: auto;
+	p {
+		font-family: $futura-bold, sans-serif;
+		font-size: 22px;
+		text-transform: uppercase;
+		color: $secondary;
+		margin-top: -8px;
+	}
+}
+
+.bottom-folks {
+	background-color: $light-grey-section;
+	width: 100%;
+	height: fit-content;
+	padding: 40px;
+	.rectangle {
+		margin
+		p {
+			font-family: $futura-bold, sans-serif;
+			font-size: 22px;
+		}
+	}
+	.carousel-item {
+		.row {
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			max-width: 50%;
+			margin: auto;
+			.d-block {
+				max-height: 200px;
+				max-width: 200px;
+				margin-left: 0;
+			}
+		}
+	}
+	.fas {
+		color: $primary;
+	}
+}
+
+//main pages
+.content, .logo {
+	height: 100vh;
+	width: 100%;
 }
 
 .content {
@@ -368,7 +428,7 @@
 	.half-the-battle {
 		background-color: $dark-blue-accents;
 		margin-top: 10vh;
-		@media screen and (max-width: 990px) {
+		@media screen and (max-width: $tablet-screen) {
 			background-size: 80%;
 		}
 		.image.rectangle {
@@ -386,11 +446,11 @@
 			border-radius: 0px 30px 30px 00px;
 			width: 40vw;
 			height: 40vh;
-			@media screen and (max-width: 990px) {
+			@media screen and (max-width: $tablet-screen) {
 				width: 60vw;
 				height: 30vh;
 			}
-			@media screen and (max-width: 572px) {
+			@media screen and (max-width: $mobile-screen) {
 				width: 80vw;
 				height: 50vh;
 			}
@@ -404,7 +464,7 @@
 				font-size: 30px;
 				color: $secondary;
 				margin-left: 20vw;
-				@media screen and (max-width: 572px) {
+				@media screen and (max-width: $mobile-screen) {
 					margin-left: 5px;
 				}
 				margin-top: 60px;
@@ -421,7 +481,7 @@
 				font-size: 17px;
 				color: $secondary;
 				margin-left: 20vw;
-				@media screen and (max-width: 572px) {
+				@media screen and (max-width: $mobile-screen) {
 					margin-left: 5px;
 					margin-top: 15vh;
 				}
@@ -591,7 +651,7 @@
 		margin-top: -10em;
 		padding-top: 15em;
 		overflow: hidden;
-		@media screen and (max-width: 990px) {
+		@media screen and (max-width: $tablet-screen) {
 			background-size: 80%;
 		}
 		h1 {
@@ -620,11 +680,11 @@
 				border-radius: 0px 30px 30px 00px;
 				width: 40vw;
 				height: 30vh;
-				@media screen and (max-width: 990px) {
+				@media screen and (max-width: $tablet-screen) {
 					width: 60vw;
 					height: 30vh;
 				}
-				@media screen and (max-width: 572px) {
+				@media screen and (max-width: $mobile-screen) {
 					width: 80vw;
 					height: 30vh;
 				}
@@ -660,20 +720,6 @@
 				margin: auto;
 			}
 		}
-	}
-}
-
-#logo {
-	right: 0;
-	max-width: 10vw;
-	top: 6vh;
-	height: auto;
-	position: absolute;
-}
-
-#about {
-	.header-image {
-		width: 85%;
 	}
 }
 
@@ -752,57 +798,8 @@
 	}
 }
 
-#great-folks {
-	margin-bottom: -40px;
-	background-color: $primary;
-	border-radius: 00px 30px 30px 0px;
-	width: 25vw;
-	left: 0;
-	margin-left: 0%;
-	z-index: 200;
-	height: 70px;
-	padding: auto;
-	p {
-		font-family: $futura-bold, sans-serif;
-		font-size: 22px;
-		text-transform: uppercase;
-		color: $secondary;
-		margin-top: -8px;
-	}
-}
-
-.bottom-folks {
-	background-color: $light-grey-section;
-	width: 100%;
-	height: fit-content;
-	padding: 40px;
-	.rectangle {
-		margin
-		p {
-			font-family: $futura-bold, sans-serif;
-			font-size: 22px;
-		}
-	}
-	.carousel-item {
-		.row {
-			align-items: center;
-			justify-content: center;
-			display: flex;
-			max-width: 50%;
-			margin: auto;
-			.d-block {
-				max-height: 200px;
-				max-width: 200px;
-				margin-left: 0;
-			}
-		}
-	}
-	.fas {
-		color: $primary;
-	}
-}
-
-@media screen and (max-width:990px) {
+//homepage top section
+@media screen and (max-width: $tablet-screen) {
 	.row {
 		flex-direction: column-reverse !important;
 		.content {
@@ -836,7 +833,7 @@
 	}
 }
 
-@media screen and (min-width:991px) {
+@media screen and (min-width: $tablet-screen) {
 	.row {
 		overflow: hidden;
 		.col-lg-7 {
@@ -881,6 +878,7 @@
 	}
 }
 
+//headers and footers
 #top-bar {
 	#wrapper-navbar{
 		@media screen and (min-width:576px) {
@@ -1037,7 +1035,7 @@
 }
 
 #home-foot {
-	@media screen and (min-width:990px) {
+	@media screen and (min-width:$tablet-screen) {
 		max-width: 60vw !important;
 	}
 }
@@ -1054,12 +1052,12 @@
 		margin-right: 0;
 		padding: 5vw;
 		flex-direction: row !important;
-		@media screen and (max-width:572px) {
+		@media screen and (max-width: $mobile-screen) {
 			padding: 1em;
 			flex-direction: column !important;
 		}
 		.col-sm-5 {
-			@media screen and (max-width:990px) {
+			@media screen and (max-width: $tablet-screen) {
 				padding: 5vw;
 			}
 		}
@@ -1103,7 +1101,7 @@
 		}
 	}
 	.line {
-		@media screen and (max-width:990px) {
+		@media screen and (max-width: $tablet-screen) {
 			display: none;
 		}
 		border-left: 1px solid $dark-grey-text;
@@ -1116,8 +1114,8 @@
 		margin-right: 0;
 		width: 100%;
 		padding: 4em;
-
-		@media screen and (max-width:572px) {
+		flex-direction: row !important;
+		@media screen and (max-width: $mobile-screen) {
 			padding:1em;
 			flex-direction: column !important;
 		}
