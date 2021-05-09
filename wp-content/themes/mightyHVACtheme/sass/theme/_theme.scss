@@ -730,6 +730,9 @@
 	background-size: 50%;
 	background-repeat: no-repeat;
 	height: auto;
+	#about {
+		width: 85vw !important;
+	}
 	.header-image {
 		margin-left: -10%;
 		width: 100%;
@@ -773,27 +776,6 @@
 		.btn:hover {
 			background-color: $primary;
 			color: $secondary;
-		}
-	}
-}
-
-.about-content {
-	background-image: url("/wordpress-site/wp-content/themes/mightyHVACtheme/sass/assets/images/squiggle.png");
-	background-size: cover;
-	background-position: -50% 50vh;
-	background-size: 50%;
-	background-repeat: no-repeat;
-	height: auto;
-	.header-image {
-		margin-left: -10%;
-		width: 80vw;
-	}
-	.heading-text {
-		padding-top: 30px;
-		max-width: 600px;
-		margin: 0 auto!important;
-		h1 {
-			margin-bottom: 30px;
 		}
 	}
 }
