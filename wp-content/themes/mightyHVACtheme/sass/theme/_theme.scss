@@ -98,7 +98,7 @@
 				}
 			}
 			.btn {
-				width: 13.5em;
+				width: 90%;
 				padding: 1em;
 				background-color: $dark-blue-buttons;
 				color: $secondary;
@@ -368,7 +368,6 @@
 	.half-the-battle {
 		background-color: $dark-blue-accents;
 		margin-top: 10vh;
-		overflow: hidden;
 		@media screen and (max-width: 990px) {
 			background-size: 80%;
 		}
@@ -435,6 +434,7 @@
 			align-items: flex-start;
 			flex-wrap: wrap;
 			justify-content: space-evenly;
+			overflow: clip;
 			@media screen and (max-width:575px) {
 				flex-direction: column !important;
 			}
@@ -443,7 +443,6 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				overflow: hidden;
 				.rectangle {
 					border: $dark-grey-text solid 1px;
 					width: 100%;
@@ -453,7 +452,7 @@
 					flex-direction: row;
 					line-height: 1.5em;
 					height: 5.5em;
-					overflow: hidden;
+					overflow: clip;
 					p {
 						color: $secondary;
 						margin: 0px;
@@ -462,14 +461,19 @@
 					}
 				}
 				.rectangle.left {
-					margin-left: -30px;
+					margin-left: 0px;
 					margin-right: 5%;
+					border-radius: 0px 30px 30px 0px;
+					max-width: 95vw;
 					p {
 						margin-left: 40%;
 					}
 				}
 				.rectangle.right {
-					margin-right: -30px;
+					border-radius: 30px 0px 0px 30px;
+					margin-left: 5%;
+					margin-right: 0px;
+					max-width: 95vw;
 					@media screen and (max-width:575px) {
 						p {
 							margin-left: 20%;
@@ -601,6 +605,8 @@
 		.row {
 			flex-direction: row !important;
 			align-items: center;
+			justify-content: center;
+			align-content: center;
 			@media screen and (max-width:575px) {
 				flex-direction: column !important;
 			}
@@ -647,11 +653,11 @@
 		}
 		.col-sm-4 {
 			padding: 1em;
-			align-content: center;
+			text-align: center;
 			img {
 				max-width: 10em;
-				padding: auto;
-				margin: 1em;
+				padding-top: 5vh;
+				margin: auto;
 			}
 		}
 	}
@@ -1031,7 +1037,7 @@
 }
 
 #home-foot {
-	@media screen and (min-width:572px) {
+	@media screen and (min-width:990px) {
 		max-width: 60vw !important;
 	}
 }
@@ -1046,14 +1052,15 @@
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
-		padding: 5em;
+		padding: 5vw;
+		flex-direction: row !important;
 		@media screen and (max-width:572px) {
-			padding:1em;
+			padding: 1em;
 			flex-direction: column !important;
 		}
 		.col-sm-5 {
-			@media screen and (max-width:572px) {
-				padding: 20%;
+			@media screen and (max-width:990px) {
+				padding: 5vw;
 			}
 		}
 		#foot-logo {
@@ -1096,7 +1103,7 @@
 		}
 	}
 	.line {
-		@media screen and (max-width:572px) {
+		@media screen and (max-width:990px) {
 			display: none;
 		}
 		border-left: 1px solid $dark-grey-text;
